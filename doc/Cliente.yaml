@@ -1,0 +1,95 @@
+openapi: 3.0.3
+info:
+  title: Projeto controle de pizzas 
+  description: |-
+   API destinada ao controle de pizzas - SENAI
+  termsOfService: http://swagger.io/terms/
+  contact:
+    email: seunome@email.com
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.0
+externalDocs:
+  description: Find out more about Swagger
+  url: http://swagger.io
+servers:
+  - url: http://
+paths:
+  /v1/senai/pizzaria/pizza:
+    get:
+      tags:
+        - Pizza
+      summary: Lista todas as pizzas
+      description: Listagem de todos as pizzas registrados no sistema
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Pizza'          
+           
+        '404':
+          description: Not Found
+        '500':
+          description: Error Internal Server (Controller / Model)
+
+
+  /v1/senai/pizzaria/pizza/{id}:
+    get:
+      tags:
+        - Pizza
+      summary: Busca uma pizza pelo ID
+      description: Retorna uma pizza pelo ID
+      parameters:
+        - name: id
+          in: path
+          description: ID para realizar a busca da Pizza
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Pizza'          
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: Not found
+        '500':
+          description: Error Internal Server (Controller / Model)  
+
+components:
+  schemas:
+    Pizza:
+      required:
+        - descricao
+        - imagem
+      type: object
+      properties:
+        id:
+          type: integer
+        descricao:
+          type: string
+        imagem:
+          type: string
+        sabor:
+          type: string
+        tipo:
+          type: string
+
+  requestBodies:
+    Pizza:
+      description: Objeto que deve ser enviado no Body das requisicoes
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Pizza'
+    
