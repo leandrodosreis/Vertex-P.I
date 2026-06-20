@@ -17,16 +17,16 @@
 <h2>Organização</h2>
 
 ├── 📂 docs  
-│ └── 📄 Kick-Off (orientações do trabalho)  
-│ └── 📄 protótipos   
-│ └── 📄 TAP (formato WIKI)  
-│ └── 📄 LER.docx  
+│ └── 📄 [Kick-Off (orientações do trabalho)](https://docs.google.com/document/d/12r68vbb4KuGXovMsxTSVWPvK6rEix3_gENnudm7lNPo/edit?usp=sharing)  
+│ └── 📄 [protótipos](https://www.figma.com/design/5cRNyWJYQMdUUzvkqVIGIQ/Pizzaria-Acme?node-id=0-1&t=T88s2GeSkhKQjmor-0)   
+│ └── 📄 [TAP (formato WIKI)](https://github.com/leandrodosreis/Vertex-P.I/wiki/TAP)  
+│ └── 📄 [LER.docx](https://docs.google.com/document/d/1ut8ZxnrQrDx5KilmTDhwMugYl3n5sV5cXbw8y33k3E8/edit?usp=sharing)  
 ├── 📂 code  
-│ └── 📂 banco  
-│ └── 📂 backend  
-│ └── 📂 frontend  
-├── 📂 referências  
-│ └── 📄 bibliografia.bib  
+│ └── 📂 [banco](https://github.com/Grplay215/back-vertex/tree/main/model)  
+│ └── 📂 [backend](https://github.com/Grplay215/back-vertex)  
+│ └── 📂 [frontend usuario](https://github.com/Gisele06/Vertex-Front-User)  
+│ └── 📂 [frontend admin](https://github.com/leandrodosreis/teste-front.git) 
+
 
 <h2>Escopo mínimo</h2>
 
@@ -44,7 +44,7 @@ O projeto deverá apresentar:
 
 * Frontend (HTML, CSS e JS sem uso de frameworks)  
 * Backend (Node.js)  
-* Banco ( MySQL)  
+* Banco (MySQL)  
 * Projetos (Github)  
 * Integração (API REST)
   
@@ -53,15 +53,8 @@ Obs: Outros frameworks, bibliotecas e ferramentas podem ser utilizadas, desde qu
 <h2>Entrega</h2>
 
 * Fork do modelo de repositório do github disponibilizado pelos professores, não pode faltar:  
-* Descrição do projeto  
-* Integrantes da equipe  
-
-<h2>Tecnologias utilizadas</h2>
-
-* Link do Projeto frontend  
-* Link do Projeto backend  
-* Link do Projeto Banco de dados  
-* Link do video pitch (5 minutos apresentando o projeto) - publicado no Youtube.  
+* Descrição do projeto (Disponivel na TAP)
+* Integrantes da equipe 
 
 <h2>Roteiro:</h2>
 
